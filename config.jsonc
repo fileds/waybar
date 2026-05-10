@@ -1,0 +1,65 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 24,
+    "spacing": 4,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "pulseaudio", "network", "battery", "tray"],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "strip-workspace-numbers": true,
+        "format": "{name}"
+    },
+
+    "sway/mode": {
+        "format": "<span style='italic'>{}</span>"
+    },
+
+    "clock": {
+        "format": "{:%a %d %b  %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "cpu": {
+        "format": "\uf2db  {usage}%",
+        "interval": 2,
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "\udb80\udf5b  {used:0.1f}G/{avail:0.1f}G",
+        "interval": 5
+    },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "\uf6a9  muted",
+        "format-icons": {
+            "default": ["\uf026", "\uf027", "\uf028"]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "format-wifi": "\uf1eb  {essid} ({signalStrength}%)",
+        "format-ethernet": "\udb80\ude00  {ipaddr}",
+        "format-disconnected": "\uf127  disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "\uf0e7  {capacity}%",
+        "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"]
+    },
+
+    "tray": {
+        "spacing": 8
+    }
+}
