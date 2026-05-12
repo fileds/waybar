@@ -29,7 +29,7 @@
     },
 
     "memory": {
-        "format": "\udb80\udf5b  {used:4.1f}G/{avail:.1f}G",
+        "format": "\udb80\udf5b  {used:4.1f}G/{total:.1f}G",
         "interval": 5
     },
 
