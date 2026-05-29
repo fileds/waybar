@@ -87,6 +87,36 @@ window#waybar {
     color: #F7768E;
 }
 
+#bluetooth {
+    color: #7AA2F7;
+    padding: 0 8px;
+}
+
+#bluetooth.disabled {
+    color: #a9b1d6;
+    padding: 0 8px;
+}
+
+#bluetooth.no-controller {
+    color: #a9b1d6;
+    padding: 0 8px;
+}
+
+#bluetooth.off {
+    color: #a9b1d6;
+    padding: 0 8px;
+}
+
+#bluetooth.on {
+    color: #7AA2F7;
+    padding: 0 8px;
+}
+
+#bluetooth.connected {
+    color: #9ECE6A;
+    padding: 0 8px;
+}
+
 #network {
     color: #ad8ee6;
     padding: 0 8px;
