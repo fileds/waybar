@@ -37,7 +37,7 @@
 
     "pulseaudio": {
         "format": "{icon}  {volume:3d}%",
-        "format-muted": "\uf6a9  muted",
+        "format-muted": "\uf026  muted",
         "format-icons": {
             "default": ["\uf026", "\uf027", "\uf028"]
         },
