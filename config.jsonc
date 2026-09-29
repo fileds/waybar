@@ -3,9 +3,9 @@
     "position": "bottom",
     "height": 24,
     "spacing": 4,
-    "modules-left": ["sway/workspaces"],
-    "modules-center": ["sway/mode"],
-    "modules-right": ["cpu", "memory", "network", "bluetooth", "pulseaudio", "battery", "clock"],
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["cpu", "clock", "memory"],
+    "modules-right": ["network", "backlight", "bluetooth", "pulseaudio", "battery"],
     /*"modules-right": ["cpu", "memory", "pulseaudio", "network", "battery", "tray"],*/
 
     "sway/workspaces": {
@@ -36,12 +36,18 @@
     },
 
     "pulseaudio": {
-        "format": "{icon}  {volume:3d}%",
-        "format-muted": "\udb81\udd81  muted",
+        "format": "{icon} {volume:3d}%",
+        "format-muted": "\udb81\udd81 muted",
         "format-icons": {
             "default": ["\uf026", "\uf027", "\uf028"]
         },
         "on-click": "pavucontrol"
+    },
+
+    "backlight": {
+        "format": "\uf522  {percent}%",
+        "on-scroll-up": "brightnessctl set +1%",
+        "on-scroll-down": "brightnessctl set 1%-"
     },
 
     "network": {
@@ -53,9 +59,9 @@
 
     "bluetooth": {
         // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
-        "format": " {status}",
-        "format-off": " {status}",
-        "format-disabled": " {status}",
+        "format": "",
+        "format-off": "",
+        "format-disabled": "",
         "format-connected": " {num_connections}",
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{device_battery_percentage}\t{controller_address}\n\n{device_enumerate}",

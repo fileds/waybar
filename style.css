@@ -56,7 +56,7 @@ window#waybar {
 }
 
 #cpu {
-    color: #9ECE6A;
+    color: #a9b1d6;
     padding: 0 8px;
 }
 #cpu.warning {
@@ -68,7 +68,7 @@ window#waybar {
 
 
 #memory {
-    color: #7AA2F7;
+    color: #a9b1d6;
     padding: 0 8px;
 }
 #memory.warning {
@@ -78,35 +78,38 @@ window#waybar {
     color: #F7768E;
 }
 
-#pulseaudio {
-    color: #E0AF68;
+#backlight {
+    color: #a9b1d6;
     padding: 0 8px;
 }
 
+#pulseaudio {
+    color: #a9b1d6;
+    padding: 0 8px;
+}
 #pulseaudio.muted {
-    color: #F7768E;
+    color: #f7768e;
+}
+#pulseaudio.bluetooth {
+    color: #7AA2F7;
 }
 
 #bluetooth {
     color: #7AA2F7;
     padding: 0 8px;
 }
-
 #bluetooth.disabled {
-    color: #a9b1d6;
+    color: #f7768e;
     padding: 0 8px;
 }
-
 #bluetooth.no-controller {
     color: #a9b1d6;
     padding: 0 8px;
 }
-
 #bluetooth.off {
     color: #a9b1d6;
     padding: 0 8px;
 }
-
 #bluetooth.on {
     color: #7AA2F7;
     padding: 0 8px;
@@ -118,7 +121,7 @@ window#waybar {
 }
 
 #network {
-    color: #ad8ee6;
+    color: #a9b1d6;
     padding: 0 8px;
 }
 #network.disconnected {
@@ -126,14 +129,15 @@ window#waybar {
 }
 
 #battery {
-    color: #9ECE6A;
+    color: #FF9E64;
     padding: 0 8px;
 }
-
-#battery.warning {
-    color: #FF9E64;
+#battery.charging {
+    color: #9ece6a;
 }
-
+#battery.warning {
+    color: #F7768E;
+}
 #battery.critical {
     color: #F7768E;
 }
