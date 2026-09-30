@@ -25,13 +25,21 @@
 
     "cpu": {
         "format": "\uf2db  {usage:3d}%",
+        "states": {
+            "warning": 50,
+            "critical": 80
+        },
         "interval": 2,
         "tooltip": false
     },
 
     "memory": {
         "format": "\uefc5  {used:4.1f}G/{total:.1f}G",
-        "interval": 5,
+        "interval": 2,
+        "states": {
+            "warning": 50,
+            "critical": 80
+        },
         "tooltip": false
     },
 
