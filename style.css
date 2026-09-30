@@ -133,10 +133,13 @@ window#waybar {
     padding: 0 8px;
 }
 #battery.charging {
-    color: #9ece6a;
+    color: #9ECE6A;
+}
+#battery.full {
+    color: #9ECE6A;
 }
 #battery.warning {
-    color: #F7768E;
+    color: #E0AF68;
 }
 #battery.critical {
     color: #F7768E;
